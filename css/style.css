@@ -301,6 +301,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
+    max-width: 95%;
 }
 .food>div{
     border: 2px dotted #DCAE1D;
