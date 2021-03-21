@@ -278,7 +278,9 @@ footer{
 }
 #favorite {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 95%;
+    row-gap: 30px;
+    justify-content: center;
 }
 
 .animal{
