@@ -293,7 +293,7 @@ footer{
 }
 .animal>div{
     border: 2px dotted #DCAE1D;
-    width: 400px;
+    width: 30%;
 }
 .food{
     display: flex;
@@ -305,7 +305,7 @@ footer{
 }
 .food>div{
     border: 2px dotted #DCAE1D;
-    width: 375px;
+    width: 30%px;
 }
 #favorite div h2{
     font-size: 30px;
