@@ -277,11 +277,8 @@ footer{
 
 }
 #favorite {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .animal{
@@ -293,7 +290,7 @@ footer{
 }
 .animal>div{
     border: 2px dotted #DCAE1D;
-    width: 30%;
+    width: 375px;
 }
 .food{
     display: flex;
@@ -305,7 +302,7 @@ footer{
 }
 .food>div{
     border: 2px dotted #DCAE1D;
-    width: 30%px;
+    width: 375px;
 }
 #favorite div h2{
     font-size: 30px;
