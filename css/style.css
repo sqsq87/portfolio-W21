@@ -306,11 +306,11 @@ footer{
 }
 #food>p{
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 }
 #zoo>p{
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 }
 .animal {
     text-align: center;
@@ -328,6 +328,7 @@ footer{
     margin-top: 40px;
    
 }
+
 
 @media screen and (prefers-reduced-motion: reduce){
     img{
