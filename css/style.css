@@ -278,33 +278,27 @@ footer{
 }
 #favorite {
     display: grid;
-    grid-template-columns: 95%;
     row-gap: 30px;
     justify-content: center;
 }
 
 .animal{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 95%;
     justify-content: center;
-    align-items: center;
 }
 .animal>div{
     border: 2px dotted #DCAE1D;
-    width: 375px;
 }
 .food{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-    max-width: 95%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-columns: 95%;
+   justify-content: center;
 }
 .food>div{
     border: 2px dotted #DCAE1D;
-    width: 375px;
 }
 #favorite div h2{
     font-size: 30px;
@@ -331,6 +325,7 @@ footer{
 
 #favorite img{
     width: 70%;
+    margin-top: 40px;
    
 }
 
