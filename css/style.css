@@ -193,6 +193,7 @@ footer{
 #dogs img:nth-child(2n-1){
     transform: rotate(5deg);
 }
+
 .dog1_photo{
    display: grid;
    grid-template-columns: 45% 45%;
@@ -200,6 +201,7 @@ footer{
 }
 #dogs img{
     width: 90%;
+    margin-top: 40px;
 }
 .dog2_photo {
     display: grid;
