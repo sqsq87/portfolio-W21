@@ -18,7 +18,7 @@ body{
     font-size: 20px;
     margin: 1.2em;
     background:#FFF8DC;
-    font-family: Lora, sans-serif;
+    font-family: Lora,sans-serif;
   
   
   }
@@ -199,7 +199,7 @@ footer{
    justify-content: space-between;
 }
 #dogs img{
-    width: 70%;
+    width: 90%;
 }
 .dog2_photo {
     display: grid;
@@ -224,12 +224,10 @@ footer{
 
 #experience {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     row-gap: 30px;
 }
-#experience>div{
-    border: 4px double #FBA100;
-}
+
 #experience div h2{
     font-size: 30px;
     text-align: center;
@@ -237,17 +235,29 @@ footer{
 #teaching{
     text-align: center;
 }
-#teaching img{
+/*#teaching img{
     width: 70%;
+}*/
+.teaching_picture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#teaching img:nth-child(2n){
+.teaching_picture img:nth-child(2n){
     transform: rotate(-5deg);
+    grid-column: 2 /span 2;
+    margin-right: 15px;
 }
 
-#teaching img:nth-child(2n-1){
+    
+
+
+.teaching_picture img:nth-child(2n-1){
     transform: rotate(5deg);
+    grid-column: 1 /span 2;
+    margin-left: 15px;
 }
+
 #teaching img{
     margin-top: 40px;
 }
@@ -255,27 +265,57 @@ footer{
 
 #places {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: flex-start;
+    margin-top: 15px;
 }
-.Erhai{
-    grid-column: 1/ span 1;
+
+#journey{
+    text-align: center;
 }
-.snow_mountain{
-    grid-column: 2 / span 2;;
-}
+
+
 #places >div{
     text-align: center;
-    border: 2px dotted #DCAE1D;
+
 }
 #places h3{
     font-size: 25px;
+    color: #984B43;
 }
-#places img{
+/*#places img{
     align-self: center;
     width: 70%;
 
+}*/
+.erhai_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
+.erhai_images img:nth-child(2n-1){
+    grid-column: 1 /span 2;
+    margin-left: 15px;
+}
+.erhai_images img:nth-child(2n){
+    grid-column: 2 /span 2;
+    margin-right: 15px;
+}
+
+.mountain_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.mountain_images img:nth-child(2n-1){
+    grid-column: 1 /span 2;
+    margin-left: 15px;
+}
+.mountain_images img:nth-child(2n){
+    grid-column: 2 /span 2;
+    margin-right: 15px;
+}
+
+
+
 #favorite {
     display: grid;
     row-gap: 30px;
@@ -318,9 +358,7 @@ footer{
 .food {
     text-align: center;
 }
-#favorite>div{
-    border: 4px double #FBA100;
-}
+
 
 
 #favorite img{
