@@ -21,7 +21,6 @@ body{
     background: url('../imgs/background.jpg');
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     font-family: Lora,sans-serif;
 
@@ -471,7 +470,6 @@ footer{
     }
     #brief_introduction div img{
        width: 70%;
-       height: 80%;
        align-self: center;
       
     }
@@ -483,7 +481,6 @@ footer{
     }
     .school img{
         width:70%;
-        height: 80%;
     }
     nav li{
         font-size: 50px;
