@@ -12,16 +12,34 @@ body:before {
     width: 100%;
     height: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+    
 }
 body{
     color: #000000;
     font-size: 20px;
     margin: 1.2em;
-    background:#FFF8DC;
+    background: url('../imgs/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Lora,sans-serif;
+
   
   
   }
+  h1, h2, h3,nav{
+    font-family: Arvo,Lora;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+nav li{
+    padding-bottom: 5px;
+}
   
 a{
       font-size: 20px;
@@ -109,7 +127,10 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+
 }
+
+
 
   
 
@@ -139,6 +160,7 @@ footer{
     z-index: 1;
     position: absolute;
     top: -60px;
+    font-family: Arvo, Lora;
   
   
 }
@@ -200,14 +222,16 @@ footer{
    justify-content: space-between;
 }
 #dogs img{
-    width: 90%;
+    width: 80%;
     margin-top: 40px;
+    height: 70%;
 }
 .dog2_photo {
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 40% 40%;
     justify-content: space-between;
  }
+
 
 
 
@@ -382,6 +406,122 @@ footer{
    h1{
        animation: none;
    }
+  }
+
+  @media screen and (min-width: 850px){
+    nav{
+        width: 100%;
+        
+    }
+    nav ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+    }
+    #places{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    #places .Erhai{
+        border-right: 2px dotted #DCAE1D;
+    }
+    .erhai_images{
+        margin-right: 20px;
+    }
+    .mountain_images{
+        margin-left: 20px;
+    }
+
+    
+    .animal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .animal>div{
+        flex-basis: 400px;
+    }
+    .food{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .food>div{
+        flex-basis: 400px;
+    }
+   
+    
+    
+    #favorite img{
+        width: 70%;
+        margin-top: 50px;
+       
+    }
+    #brief_introduction div{
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        justify-items: center;
+       
+
+
+    }
+    #brief_introduction div img{
+       width: 70%;
+       height: 80%;
+       align-self: center;
+      
+    }
+    .school{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+    .school img{
+        width:70%;
+        height: 80%;
+    }
+    nav li{
+        font-size: 50px;
+    }
+    .teaching_picture{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        justify-items: center;
+    }
+
+    
+    
+    .teaching_picture img:nth-child(1){
+        transform: rotate(-5deg);
+        grid-column: 1 /span 2;
+        margin-right: 15px;
+        width: 90%;
+    }
+    .teaching_picture img:nth-child(2){
+        transform: rotate(5deg);
+        grid-column: 3 /span 2;
+        margin-right: 15px;
+        width: 90%;
+    }
+    .teaching_picture img:nth-child(3){
+        transform: rotate(0deg);
+        grid-column: 2 /span 2;
+        margin-right: 15px;
+        width: 90%;
+    }
+
+
+    
+    
+
+
+    
+
+
   }
 
 
