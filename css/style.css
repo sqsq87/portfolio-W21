@@ -408,7 +408,7 @@ footer{
    }
   }
 
-  @media screen and (min-width: 850px){
+  @media screen and (min-width: 800px){
     nav{
         width: 100%;
         
