@@ -261,9 +261,7 @@ footer{
 #teaching{
     text-align: center;
 }
-/*#teaching img{
-    width: 70%;
-}*/
+
 .teaching_picture{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -310,11 +308,7 @@ footer{
     color: #984B43;
 }
 
-/*#places img{
-    align-self: center;
-    width: 70%;
 
-}*/
 .erhai_images{
     margin-top: 40px;
     display: grid;
@@ -393,28 +387,58 @@ footer{
 #favorite img{
     width: 70%;
     margin-top: 50px;
+    transform: rotate(0deg);
    
 }
 
-
-@media screen and (prefers-reduced-motion: reduce){
-    img{
-
-      animation: none;
+.flipbox { 
+    position: relative; 
+    perspective: 1000px; 
+}
+.flipbox:hover .side:nth-child(1) { 
+    transform: rotateY(180deg);
+ }
+.flipbox:hover .side:nth-child(2) { 
+    transform: rotateY(0deg); 
+}
+.side { 
+    transition: 0.6s; 
+    transform-style: preserve-3d; 
+    backface-visibility: hidden; 
+    width: inherit; 
+    height: inherit; }
+.side:nth-child(1) { 
     
-   }
-   h1{
-       animation: none;
-   }
-  }
+    
+}
+.side:nth-child(2) { 
+    position: absolute; 
+    left: 10px;
+    top: 60px;
+    transform: rotateY(180deg); 
+}
+.contact_me{
+    text-align: center;
+    font-family: Arvo, sans-serif;
+}
+input ,textarea{
+    background-color: #F5DEB3;
+    font-family: Arvo, sans-serif;
+}
+textarea{
+    width: 70%;
+}
 
-  @media screen and (min-width: 800px){
+
+
+
+  @media screen and (min-width: 850px){
     nav{
         width: 100%;
         
     }
     nav ul{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         justify-content: space-between;
         align-items: center;
         text-align: center;
@@ -521,6 +545,18 @@ footer{
 
 
   }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    img{
+
+      animation: none;
+    
+   }
+   h1{
+       animation: none;
+   }
+  }
+
 
 
 
