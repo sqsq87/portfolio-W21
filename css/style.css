@@ -456,12 +456,27 @@ textarea{
 
 }
 .menu button{
-    width: 40px;
+    width: 50px;
+    height: 50px;
+    
     background-color: #FFFF99;
 
 }
 .top{
     text-align: center;
+}
+
+
+.flip_focus {
+    text-decoration: none;
+
+}
+.flip_focus:hover{
+    text-decoration: none;
+    color: black;
+}
+.flip_focus:active{
+    text-decoration: none;
 }
 
 
@@ -535,7 +550,8 @@ textarea{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: baseline;
     }
     .animal>div{
         flex-basis: 400px;
@@ -544,7 +560,8 @@ textarea{
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
-       justify-content: center;
+       justify-content: space-evenly;
+       align-items:center;
     }
     .food>div{
         flex-basis: 400px;
@@ -617,38 +634,14 @@ textarea{
     .flip_focus:focus .side:nth-child(1){
         transform: rotateY(180deg);
     }
-     /*.flipbox:focus-within .side:nth-child(1){
-        transform: rotateY(180deg);
-
-     }
-     .flipbox:active .side:nth-child(1){
-        transform: rotateY(180deg);
-
-     }
-     .flipbox:focus .side:nth-child(1){
-        transform: rotateY(180deg);
-
-     }*/
      
 
     .flipbox:hover .side:nth-child(2) { 
         transform: rotateY(0deg); 
     }
-    .flip_focus:focus .side:nth-child(2){
+    .flip_focus:focus  .side:nth-child(2){
         transform: rotateY(0deg);
     }
-    /*.flipbox:focus-within .side:nth-child(2){
-        transform: rotateY(0deg); 
-
-    }
-    .flipbox:active .side:nth-child(2){
-        transform: rotateY(0deg); 
-
-    }
-    .flipbox:focus .side:nth-child(2){
-        transform: rotateY(0deg); 
-
-    }*/
     
     .side { 
         transition: 0.6s; 
@@ -731,6 +724,45 @@ textarea{
     .food>div{
         flex-basis: 500px;
     }
+    .erhai_images{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    .erhai_images img:nth-child(1){
+        grid-column: 1 /span 2;
+        width: 90%;
+
+    }
+    .erhai_images img:nth-child(2){
+        grid-column: 3 /span 2;
+        width: 90%
+    }
+    .erhai_images img:nth-child(3){
+        grid-column: 2 /span 2;
+        width: 90%;
+        transform: rotate(0deg);
+    }
+
+
+    
+    .mountain_images{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .mountain_images img:nth-child(1){
+        grid-column: 1 /span 2;
+        width: 90%;
+    }
+    .mountain_images img:nth-child(2){
+        grid-column: 3 /span 2;
+        width: 90%;
+    }
+    .mountain_images img:nth-child(3){
+        grid-column: 2 /span 2;
+        width: 90%;
+        transform: rotate(0deg);
+    }
+
+    
+    
   
 
 
@@ -749,13 +781,48 @@ textarea{
    h1{
        animation: none;
    }
-  }
-  html{
+   html{
     scroll-behavior: auto; 
 }
    body{
     background-attachment: initial;
   }
+  .flipbox { 
+    position:initial;
+    perspective: initial;
+}
+.flipbox:hover .side:nth-child(1){ 
+    transform: initial;
+ }
+.flip_focus:focus .side:nth-child(1){
+    transform: initial;
+}
+.flipbox:hover .side:nth-child(2) { 
+    transform:initial; 
+}
+.flip_focus:focus  .side:nth-child(2){
+    transform: initial;
+}
+  
+.side { 
+    transition: none;
+    
+ }
+
+.side:nth-child(2) { 
+    position: initial;
+    left: initial;
+    top: initial;
+    transform: none;
+}
+.skip a{
+    transition: none;
+}
+
+  }
+  
+
+
 
 
 
