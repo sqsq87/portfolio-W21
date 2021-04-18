@@ -400,29 +400,7 @@ footer{
    
 }
 
-.flipbox { 
-    position: relative; 
-    perspective: 1000px; 
-}
-.flipbox:hover .side:nth-child(1) { 
-    transform: rotateY(180deg);
- }
-.flipbox:hover .side:nth-child(2) { 
-    transform: rotateY(0deg); 
-}
-.side { 
-    transition: 0.6s; 
-    transform-style: preserve-3d; 
-    backface-visibility: hidden; 
-    width: inherit; 
-    height: inherit; }
 
-.side:nth-child(2) { 
-    position: absolute; 
-    left: 10px;
-    top: 70px;
-    transform: rotateY(180deg); 
-}
 .contact_me{
     text-align: center;
     font-family: Arvo, sans-serif;
@@ -628,6 +606,29 @@ textarea{
         grid-column: 2 /span 2;
         margin-right: 15px;
         width: 90%;
+    }
+    .flipbox { 
+        position: relative; 
+        perspective: 1000px; 
+    }
+    .flipbox:hover .side:nth-child(1) { 
+        transform: rotateY(180deg);
+     }
+    .flipbox:hover .side:nth-child(2) { 
+        transform: rotateY(0deg); 
+    }
+    .side { 
+        transition: 0.6s; 
+        transform-style: preserve-3d; 
+        backface-visibility: hidden; 
+        width: inherit; 
+        height: inherit; }
+    
+    .side:nth-child(2) { 
+        position: absolute; 
+        left: 10px;
+        top: 70px;
+        transform: rotateY(180deg); 
     }
 
 
