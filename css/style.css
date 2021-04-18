@@ -729,16 +729,16 @@ textarea{
     }
     .erhai_images img:nth-child(1){
         grid-column: 1 /span 2;
-        width: 90%;
+        width: 85%;
 
     }
     .erhai_images img:nth-child(2){
         grid-column: 3 /span 2;
-        width: 90%
+        width: 85%
     }
     .erhai_images img:nth-child(3){
         grid-column: 2 /span 2;
-        width: 90%;
+        width: 85%;
         transform: rotate(0deg);
     }
 
@@ -749,15 +749,15 @@ textarea{
     }
     .mountain_images img:nth-child(1){
         grid-column: 1 /span 2;
-        width: 90%;
+        width: 85%;
     }
     .mountain_images img:nth-child(2){
         grid-column: 3 /span 2;
-        width: 90%;
+        width: 85%;
     }
     .mountain_images img:nth-child(3){
         grid-column: 2 /span 2;
-        width: 90%;
+        width: 85%;
         transform: rotate(0deg);
     }
 
