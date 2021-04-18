@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora'>
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Arvo'>
+	
 	<title>My favorite</title>
 </head>
 <body>
@@ -27,13 +28,45 @@
 			<div class="skip"><a href="#main">Skip to Main Content</a></div>
 			<nav class="link">
 				<ul>
+				
 					<li> <a href = "index.html">home</a></li>
 					<li><a  href = "pets.html">my pets</a> </li>
-					<li><a  href = "experience.html">my experience</a></li>
-					<li><a  class='current' href = "myfavorite.html">my favorite</a></li>
+					<li><a href = "experience.html">my experience</a></li>
+					<li><a class='current' href = "myfavorite.html">my favorite</a></li>
 					<li><a href = "contact.html">contact me</a></li>
 				</ul>
 			</nav>
+
+
+			<!-- Sidebar -->
+    <div class="sidebar bar-block" id="mySidebar">
+	<button onclick="bar_close()" class="bar-item close">Close &times;</button>
+	<a href="index.html" class="bar-item">home</a>
+	<a href="pets.html" class="bar-item">my pets</a>
+	<a href="experience.html" class="bar-item">my experience</a>
+	<a class='current' class="bar-item" href = "myfavorite.html">my favorite</a>
+	<a class="bar-item" href = "contact.html">contact me</a>
+	
+
+  </div>
+  
+
+  <div class="menu">
+	<button  onclick="bar_open()">☰</button>
+  </div>
+
+			
+				
+
+
+
+
+
+
+
+
+
+
 			<h1 id='main'>My favorite place
 			</h1>
 		</header>
@@ -48,18 +81,77 @@
 		<div class='animal'>
 		<div class='monkey'>
 			<p>I love orangutans, monkeys best.  They are primates so they are very familiar to our human beings. I can always see monkeys mothers with a monkey baby in their arms, sharing food with their babies. I also see a orangutans family lying together, enjoying their afternoon.</p>
-			<img src = "imgs/orangutans.jpg" alt="orangutans" />
-			<img src = "imgs/monkey2.jpg" alt= 'monkey' />
+		
+				<div >
+
+					<div class="mySlides3">
+					<img src="imgs/orangutans.jpg" alt='monkey1'>
+					</div>
+					
+					<div class="mySlides3">
+					<img src="imgs/monkey2.jpg" alt='monkey2'>
+					</div>
+					<div class="mySlides3">
+						<img src="imgs/monkey3.jpg" alt='monkey3'>
+					</div>
+
+
+					
+					
+					
+					<button class="left_display" onclick="plusDivs3(-1)">&#10094;</button>
+					<button class="right_display" onclick="plusDivs3(1)">&#10095;</button>
+					
+				</div>
+		
 		</div>
 		<div class='panda'>
 			<p>I also love pandas. They are national treatures of China. Every time I see them, they are sitting and eating, in a very comfortable way, with a huge bunch of bamboos in front of them.</p>
-			<img src = "imgs/panda1.jpg" alt="panda_1" />
-			<img src = "imgs/panda2.jpg" alt="panda_2" />
+			
+            <div >
+
+				<div class="mySlides1">
+				<img src="imgs/panda1.jpg" alt='panda1'>
+				</div>
+				
+				<div class="mySlides1">
+				<img src="imgs/panda2.jpg" alt='panda2'>
+				</div>
+				<div class="mySlides1">
+					<img src="imgs/panda3.jpg" alt='panda3'>
+				</div>
+				
+				
+				
+				<button class="left_display" onclick="plusDivs1(-1)">&#10094;</button>
+				<button class="right_display" onclick="plusDivs1(1)">&#10095;</button>
+				
+			</div>
+		
 		</div>
 		<div class='lion'>
 			<p>I like lion too. It is the king of the forest.They are strong and beautiful.  I have even touched a baby lion. It is like a small dog and it is so cute!</p>
-			<img src="imgs/lion2.png" alt=baby_lion />
-			<img src="imgs/lion.jpg" alt=lion />
+			
+				<div >
+
+					<div class="mySlides2">
+					<img src="imgs/lion2.png" alt='lion1'>
+					</div>
+					
+					<div class="mySlides2">
+					<img src="imgs/lion.jpg" alt='lion2'>
+					</div>
+					<div class="mySlides2">
+					<img src="imgs/lion3.jpg" alt='lion3'>
+					</div>
+					
+					
+					
+					<button class="left_display" onclick="plusDivs2(-1)">&#10094;</button>
+					<button class="right_display" onclick="plusDivs2(1)">&#10095;</button>
+					
+				</div>
+		
 		</div>
 	</div>
 	</div >
@@ -93,13 +185,18 @@
 
 	</div>
 	
-
-		
+	<div class='top'><a href="#main">back to top</a></div>
 	</main>
 	<footer>
+		
 		<p>Qi Sun &copy; 2021</p>
 		<p>Contact Email: <a href="mailto:sqsq@umich.edu">sqsq@umich.edu</a></p>
 	</footer>
+
+	<script src="js/all.js"></script>
+	<script src="js/favorite.js"></script>
+
+		
 	
 </body>
 </html>

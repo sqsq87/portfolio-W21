@@ -29,13 +29,38 @@
 		<div class="skip"><a href="#main">Skip to Main Content</a></div>
 		<nav class="link">
 			<ul>
-				<li> <a href = "index.html">home</a></li>
+			    <li> <a href = "index.html">home</a></li>
 				<li><a  href = "pets.html">my pets</a> </li>
-				<li><a  href = "experience.html">my experience</a></li>
-				<li><a   href = "myfavorite.html">my favorite</a></li>
+				<li><a href = "experience.html">my experience</a></li>
+				<li><a href = "myfavorite.html">my favorite</a></li>
 				<li><a class='current' href = "contact.html">contact me</a></li>
 			</ul>
 		</nav>
+
+
+
+
+
+				<!-- Sidebar -->
+				<div class="sidebar bar-block"  id="mySidebar">
+					<button onclick="bar_close()" class="bar-item close">Close &times;</button>
+					<a href="index.html" class="bar-item">home</a>
+					<a href="pets.html" class="bar-item">my pets</a>
+					<a href="experience.html" class="bar-item">my experience</a>
+					<a class="bar-item" href = "myfavorite.html">my favorite</a>
+					<a class='current' class="bar-item" href = "contact.html">contact me</a>
+					
+				
+				  </div>
+				  
+				  <!-- Page Content -->
+				  <div class="menu">
+					<button  onclick="bar_open()">☰</button>
+				  </div>
+
+
+
+
 		<h1 id='main'>Contact me 
 		</h1>
 	</header>
@@ -61,10 +86,12 @@
   </div>
 </fieldset>
 </form>
+
 </main>
 <footer>
 	<p>Qi Sun &copy; 2021</p>
 	<p>Contact Email: <a href="mailto:sqsq@umich.edu">sqsq@umich.edu</a></p>
 </footer>
+<script src="js/all.js"></script>
 </body>
 </html>
