@@ -18,7 +18,7 @@ body:before {
 }
 body{
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     margin: 1.2em;
     background: url('../imgs/background.jpg');
     background-repeat:no-repeat;
@@ -52,7 +52,7 @@ nav li{
 }
   
 a{
-      font-size: 20px;
+      font-size: 17px;
       color: #3A1D03;
       
     }
@@ -63,7 +63,7 @@ a:hover{
   }
 h1{
     color: #76323F;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     line-height: 2;
     animation-name: zoomin;
@@ -75,7 +75,7 @@ h1{
         font-size: 2px;
     }
     to{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -262,7 +262,7 @@ footer{
 }
 
 #experience div h2{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 #teaching{
@@ -311,7 +311,7 @@ footer{
 
 }
 #places h3{
-    font-size: 25px;
+    font-size: 20px;
     color: #984B43;
 }
 
@@ -489,6 +489,29 @@ textarea{
 
 
   @media screen and (min-width: 850px){
+    body{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    a{
+        font-size:18px;
+    }
+    @keyframes zoomin {
+        from{
+            font-size: 2px;
+        }
+        to{
+            font-size: 35px;
+        }
+    }
     .link{
         display: inline;
 
@@ -675,6 +698,9 @@ textarea{
 
 
   @media screen and (min-width: 1200px){
+    a{
+        font-size:20px;
+    }
 
     nav li:nth-child(1){
         grid-column: 1/ span 1;
@@ -729,16 +755,16 @@ textarea{
     }
     .erhai_images img:nth-child(1){
         grid-column: 1 /span 2;
-        width: 85%;
+        width: 90%;
 
     }
     .erhai_images img:nth-child(2){
         grid-column: 3 /span 2;
-        width: 85%
+        width: 90%
     }
     .erhai_images img:nth-child(3){
         grid-column: 2 /span 2;
-        width: 85%;
+        width: 90%;
         transform: rotate(0deg);
     }
 
@@ -749,15 +775,15 @@ textarea{
     }
     .mountain_images img:nth-child(1){
         grid-column: 1 /span 2;
-        width: 85%;
+        width: 90%;
     }
     .mountain_images img:nth-child(2){
         grid-column: 3 /span 2;
-        width: 85%;
+        width: 90%;
     }
     .mountain_images img:nth-child(3){
         grid-column: 2 /span 2;
-        width: 85%;
+        width: 90%;
         transform: rotate(0deg);
     }
 
