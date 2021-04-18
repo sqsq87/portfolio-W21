@@ -799,7 +799,7 @@ textarea{
 
 
 
-  @media screen and (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce){
     img{
 
       animation: none;
@@ -814,7 +814,7 @@ textarea{
    body{
     background-attachment: initial;
   }
-  .flipbox { 
+.flipbox { 
     position:initial;
     perspective: initial;
 }
